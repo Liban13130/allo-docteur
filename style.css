@@ -1,0 +1,42 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins";
+}
+
+
+@media(max-width: 991px){
+    #home .banner{
+        height: 50vh;
+        background-color: red;
+    }
+}
+
+#home .banner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .banner img{
+    max-width: 400px;
+}
+
+#home .banner h6{
+    font-size: 2em;
+}
+
+#home .banner h3{
+    font-size: 3em;
+}
+
+#home .banner p{
+    font-size: 1.2em;
+}
