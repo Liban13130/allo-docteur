@@ -165,7 +165,7 @@ body{
 /* 3EME SECTION SERVICES */
 
 #services{
-    margin-top: 30px;
+    margin: 4em 0;
 }
 
 #services div.title{
@@ -179,4 +179,30 @@ body{
     font-size: 1.75em;
     margin-top: 10px;
     color: #1fb3bf;
+}
+
+#services .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+@media screen and (min-width: 550px){
+    #services .card{
+        width: 600px !important;
+    }
+}
+
+#services .container .card{
+    max-width: 500px;
+    min-height: 150px;
+    padding: 10px;
+    margin: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    box-sizing: border-box;
 }
