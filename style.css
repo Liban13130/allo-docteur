@@ -68,7 +68,7 @@ body{
     z-index: 0;
 }
 
-#home::after{
+/* #home::after{
     position: absolute;
     content: "";
     height: 100%;
@@ -78,7 +78,7 @@ body{
     background-position: bottom;
     bottom: 0;
     z-index: 0;
-}
+} */
 
 @media(max-width: 1300px){
     #home .banner h3{
@@ -160,4 +160,23 @@ body{
 #infos .container .bloc h3,
 #infos .container .bloc p{
     color: white;
+}
+
+/* 3EME SECTION SERVICES */
+
+#services{
+    margin-top: 30px;
+}
+
+#services div.title{
+    text-align: center;
+}
+#services div.title h6{
+    font-size: 2em;
+    color: #191919;
+}
+#services div.title h3{
+    font-size: 1.75em;
+    margin-top: 10px;
+    color: #1fb3bf;
 }
