@@ -172,11 +172,11 @@ body{
     text-align: center;
 }
 #services div.title h6{
-    font-size: 2em;
+    font-size: 2.25em;
     color: #2a2a2a;
 }
 #services div.title h3{
-    font-size: 1.75em;
+    font-size: 2em;
     margin-top: 10px;
     color: #1fb3bf;
 }
@@ -208,11 +208,27 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 0.5s;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
 }
 #services .container .card:hover{
-    max-width: 520px;
-    min-height: 225px;
+    transform: translateY(-10px);
+}
+#services .container .card::before{
+    content: "";
+    height: 5px;
+    position: absolute;
+    background: linear-gradient(45deg, hsl(196.14deg 90.78% 42.55%), hsl(172.35deg 61.83% 47.25%));
+    right: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+#services .container .card:hover::before{
+    right: 0%;
 }
 #services .container .card h4{
     margin: 20px 0 7px 0;
@@ -222,6 +238,12 @@ body{
 #services .container .card span{
     font-size: 1.75em;
     color: #1fb3bf;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+#services .container .card:hover span{
+    
+    transform: rotate(360deg);
 }
 #services .container .card p{
     color: #616161;
