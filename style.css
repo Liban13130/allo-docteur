@@ -199,10 +199,13 @@ body{
 
 #services .container .card{
     max-width: 500px;
-    min-height: 150px;
-    padding: 10px;
+    min-height: 180px;
+    padding: 20px;
     margin: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
