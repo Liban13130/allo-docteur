@@ -173,7 +173,7 @@ body{
 }
 #services div.title h6{
     font-size: 2em;
-    color: #191919;
+    color: #2a2a2a;
 }
 #services div.title h3{
     font-size: 1.75em;
@@ -185,10 +185,10 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
-    padding: 100px 0;
+    padding: 50px 0 100px 0
 }
 
 @media screen and (min-width: 550px){
@@ -199,13 +199,30 @@ body{
 
 #services .container .card{
     max-width: 500px;
-    min-height: 180px;
+    min-height: 205px;
     padding: 20px;
     margin: 30px 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 55px 10px #e3e3e3;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 0.5s;
+}
+#services .container .card:hover{
+    max-width: 520px;
+    min-height: 225px;
+}
+#services .container .card h4{
+    margin: 20px 0 7px 0;
+    font-size: 1.3em;
+    color: #2a2a2a;
+}
+#services .container .card span{
+    font-size: 1.75em;
+    color: #1fb3bf;
+}
+#services .container .card p{
+    color: #616161;
 }
