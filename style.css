@@ -248,3 +248,129 @@ body{
 #services .container .card p{
     color: #616161;
 }
+
+/* 4EME SECTION A PROPOS */
+
+#about{
+    background-color: #eef0f4 ;
+    box-shadow: 0 0 16px #DCDEE2}
+
+
+#about .container{
+    padding: 70px 10px;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#about .container .left{
+   max-width: 700px;
+}
+#about .container .left h3{
+    color: #2a2a2a;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+#about .container .right{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#about .container .right .icon{
+    cursor: pointer;
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    margin: 0 15px;
+    background: #eef0f4;
+    border-radius: 100%;
+    box-shadow: inset 9.91px 9.91px 15px #e2e4e8, 
+                inset -9.91px -9.91px 15px #fafcff;   
+    transition: 0.2s;
+    color: #616161;
+}
+#about .container .right .icon:hover{
+    background: #eef0f4;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0px #e2e4e8, inset -0px 0px 0 #fafcff,
+        9.91px 9.91px 15px #e2e4e8, -9.91px -9.91px 15px #fafcff,
+}
+#about .container .right .icon span{
+    font-size: 2em;
+    transition: 0.3s;
+}
+#about .container .right .icon:hover span{
+    color: #1fb3bf;
+}
+
+#about .container .right .icon h4{
+    font-size: 1.2em;
+    margin-top: 5px;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+}
+
+#about .container .right .icon:hover h4{
+    color: #1fb3bf;
+}
+
+@media(max-width: 1199px){
+    #about .container{
+        flex-direction: column;
+    }
+    #about .container .left{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 479px){
+    #about .container .right .icon{
+        margin: 15px;
+    }
+    #about .container .left{
+        text-align: justify;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* background: linear-gradient(145deg, #FFFFFF, #BBBDC0);
+border-radius: 100%;
+box-shadow: inset 13.81px 13.81px 16px #DCDEE2, 
+            inset -13.81px -13.81px 16px #FFFFFF; */
