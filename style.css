@@ -852,7 +852,7 @@ section#contact .container form button:hover{
 
 section#facts{
     background-color: #f9f9fb;
-    padding: 0px 10px 50px 10px;
+    padding: 0px 10px 115px 10px;
 }
 
 section#facts .container:nth-child(1){
@@ -972,9 +972,49 @@ section#facts .container:nth-child(2) .person h5{
     }
 }
 
+/* 11EME SECTION FOOTER */
 
+footer{
+    background-color: #f9f9fb;
+    border-top: 4px solid #1fb3bf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 50px 0;
+}
 
+footer h2 a,
+footer h3{
+    color: #2a2a2a;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
 
+footer h2 img{
+    width: 40px;
+}
+
+footer ul li a,
+footer p a{
+    color: #292929;
+}
+
+@media(max-width: 550px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0 0 0 ;
+    }
+    footer > div{
+        margin-bottom: 40px;
+    }
+}
+
+.copyright{
+    background-color: #f9f9fb;
+    text-align: center;
+}
 
 
 
