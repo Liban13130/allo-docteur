@@ -583,7 +583,164 @@ section#application .container .right a:hover{
     }
 }
 
+/* 7EME SECTION PRESENTATION SPECIALISTE */
 
+section#doctors{
+    background-color: #f9f9fb;
+    padding: 50px 0;
+}
+
+section#doctors .container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+section#doctors .container .title{
+    text-align: center;
+}
+
+section#doctors .container .title h3{
+    font-size: 3em;
+    color: #2a2a2a;
+}
+
+section#doctors .container .title h6{
+    font-size: 1.8em;
+    margin-top: 5px;
+    color: #1fb3bf;
+}
+
+section#doctors .container .person-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+section#doctors .container .person-row .person-bloc{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    margin: 20px 20px;
+}
+
+section#doctors .container .person-row .person-bloc:nth-child(1){
+    background: linear-gradient(325deg, hsl(196.14deg 90.78% 42.55%), hsl(172.35deg 61.83% 47.25%));
+}
+
+section#doctors .container .person-row .person-bloc:nth-child(2){
+    background: linear-gradient(0deg, hsl(196.14deg 90.78% 42.55%), hsl(172.35deg 61.83% 47.25%));
+}
+
+section#doctors .container .person-row .person-bloc:nth-child(3){
+    background: linear-gradient(45deg, hsl(196.14deg 90.78% 42.55%), hsl(172.35deg 61.83% 47.25%));
+}
+
+section#doctors .container .person-row .person-bloc img{
+    height: 80%;
+}
+
+section#doctors .container .person-row .person-bloc .person-description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.3em;
+    background-color: #f9f9fb;
+    padding: 0.3em 0.5em;
+    border-top-right-radius: 20px;
+    color: #333;
+    transition: 0.5s ease-in-out;
+    width: 170px;
+}
+
+section#doctors .container .person-row .person-bloc:hover .person-description{
+    left: 100%;
+    transform: translateX(-100%);
+    border-top-right-radius: 0;
+    border-top-left-radius: 20px;
+}
+
+section#doctors .container .person-row .person-bloc:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+@media(max-width: 500px){
+    section#doctors .container .person-row .person-bloc{
+        width: 100%;
+    }
+}
+
+/* 8EME SECTION NEWS */
+
+section#news{
+    background: linear-gradient(45deg, hsl(196.14deg 90.78% 42.55%), hsl(172.35deg 61.83% 47.25%));
+}
+
+section#news .title{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+section#news .title h3{
+    font-size: 3em;
+    text-shadow: 0px 4px 6px #0000005c;
+}
+
+section#news .title h6{
+    font-size: 2em;
+    text-shadow: 0px 4px 6px #0000005c;
+}
+
+section#news .container{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+section#news .container .article-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    background-color: #f9f9fb;
+    border-radius: 15px;
+    margin: 15px 15px;
+}
+
+section#news .container .article-blog .blog-img img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+section#news .container .article-blog .description{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+section#news .container .article-blog .description span{
+    font-size: 1em;
+    color: #585858;
+}
+
+section#news .container .article-blog .description a{
+    font-size: 1.8em;
+    color: #1fb3bf;
+    font-weight: 500;
+}
 
 
 
