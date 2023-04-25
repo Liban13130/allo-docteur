@@ -848,6 +848,133 @@ section#contact .container form button:hover{
     }
 }
 
+/* 10EME SECTION AVIS CLIENT */
+
+section#facts{
+    background-color: #f9f9fb;
+    padding: 0px 10px 50px 10px;
+}
+
+section#facts .container:nth-child(1){
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section#facts .container h3{
+    text-align: center;
+    font-size: 3em;
+    color: #2a2a2a;
+}
+
+section#facts .container .avis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section#facts .container .avis .bloc{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 15px 35px 8px #e6e6e6;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+section#facts .container .avis .bloc:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    background: #2a2a2a;
+    color: #f9f9fb;
+}
+
+section#facts .container .avis .bloc:hover h3{
+    color: #f9f9fb;
+}
+
+section#facts .container:nth-child(2){
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 15px 35px 8px #e6e6e6;
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+section#facts .container:nth-child(2):hover{
+    background-color: #2a2a2a;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+section#facts .container:nth-child(2):hover p,
+section#facts .container:nth-child(2):hover .person h5{
+    color: white;
+}
+
+section#facts .container:nth-child(2) .person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+section#facts .container:nth-child(2) .person img{
+    border-radius: 50px;
+}
+
+section#facts .container:nth-child(2) .quote{
+    text-align: center;
+    font-size: 1.2em;
+    font-style: oblique;
+    color: #212121;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+section#facts .container:nth-child(2) p{
+    transition: 0.2s;
+}
+
+section#facts .container:nth-child(2) div:nth-child(1){
+    margin-right: 25px;
+}
+
+section#facts .container:nth-child(2) .person h5{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    transition: 0.2s;
+}
+
+@media(max-width: 550px){
+    section#facts .container .avis{
+        flex-direction: column;
+    }
+    section#facts .container .avis .bloc{
+        margin-top: 20px;
+    }
+    section#facts .container h3{
+        font-size: 2em;
+    }
+    section#facts {
+        padding: 0px 10px 50px 10px;
+    }
+}
+
+
+
+
 
 
 
