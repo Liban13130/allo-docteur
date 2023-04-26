@@ -15,6 +15,114 @@
     }
 }
 
+#home{
+    position: relative;
+}
+
+header#sidebar{
+    position: fixed;
+    background: linear-gradient(45deg, hsl(196.14deg 90.78% 42.55%), hsl(172.35deg 61.83% 47.25%));
+    z-index: 999;
+    height: 100vh;
+    min-width: 280px;
+    text-align: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+    transition: 0.2s;
+    transform: translateX(-100%);
+    box-shadow: 0 0 26px -6px black;
+}
+
+header#sidebar.open-sidebar{
+    transform: translateX(0%);
+}
+
+header#sidebar h1 a{
+    font-size: 1.2em;
+    color: #f9f9fb;
+    margin: 40px 0 60px 0;
+    display: block;
+}
+
+
+header#sidebar .hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg, hsl(196.14deg 90.78% 42.55%), hsl(172.35deg 61.83% 47.25%));
+    position: absolute;
+    right: -70px;
+    top: 25px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header#sidebar .hamburger .top,
+header#sidebar .hamburger .mid,
+header#sidebar .hamburger .bottom{
+    height: 3px;
+    width: 25px;
+    background-color: #f9f9fb;
+    transition: 0.5s;
+}
+
+header#sidebar.open-sidebar .hamburger .top{
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+}
+
+header#sidebar.open-sidebar .hamburger .bottom{
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 12px;
+}
+
+header#sidebar.open-sidebar .hamburger .mid{
+    display: none;
+}
+
+
+header#sidebar ul li{
+    margin-bottom: 10px;
+}
+
+header#sidebar p{
+    color: #f9f9fb;
+}
+
+header#sidebar p span{
+    font-size: 1.5em;
+    transform: rotate(320deg);
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+header#sidebar ul li a{
+    color: #f9f9fb;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+@media(max-width:500px){
+    header#sidebar{
+        width: 70%;
+    }
+}
+
+@media(max-width:380px){
+    header#sidebar {
+        padding-left: 25px;
+    }
+    header#sidebar .hamburger{
+        right: -65px;
+    }
+}
+
 #home .banner{
     height: 100%;
     max-width: 1300px;
